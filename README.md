@@ -1,4 +1,5 @@
 Current Version: `v0.0.1`
+
 Required Python3 and Java SE 19
 
 # What is SShell?

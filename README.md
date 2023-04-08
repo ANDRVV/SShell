@@ -52,6 +52,7 @@ Now you can run:
     mem:                    Set, get consts.          mem [-a/--all]                                       (Get list of stored object)
                                                       mem [-r/--remove] {object}                           (Remove stored object)
                                                       mem {object}                                         (Get value of stored object)
+                                                      mem {object} {value}                                 (Set a const with a value)
     
     extract:                Read a file.              extract {file}                                       (Read a file)
     

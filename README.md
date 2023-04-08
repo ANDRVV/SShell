@@ -78,3 +78,8 @@ Example:
 All the commands are made with a "timer", just because you can't use Control-C.
 
 For safety and to immediately cancel an action press Control-C.
+
+
+
+Copyright 2023 Andrea Vaccaro
+Apache License 2.0

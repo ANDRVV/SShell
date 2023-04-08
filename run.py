@@ -20,15 +20,15 @@ if "0" in code:
             response = input("Run SShell? [N/y] ")
             if response.lower() == "y":
                 if "windows" in platform.platform().lower():
-                    os.system("@echo off & cls & java --enable-preview -jar jar\SShell.jar")
+                    os.system("@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell")
                 else:
-                    os.system("clear && java --enable-preview -jar jar/SShell.jar &> /dev/null")
+                    os.system("clear && java --enable-preview -cp "bin;lib/commons-codec-1.15.jar;lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null")
         else:
             pass
     else:
         print("[ERROR] Java SE 19 required.")
 else:
     if "windows" in platform.platform().lower():
-        os.system("@echo off & cls & java --enable-preview -jar jar\SShell.jar")
+        os.system("@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell")
     else:
-        os.system("clear && java --enable-preview -jar jar/SShell.jar &> /dev/null")
+        os.system("clear && java --enable-preview -cp "bin;lib/commons-codec-1.15.jar;lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null")

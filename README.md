@@ -45,7 +45,8 @@ It is forbidden to use '', for spaces use '?'.
 
 Example:
 
-mk -f Hello?World.txt
+`mk -f Hello?World.txt`
 
 All the commands are made with a "timer", just because you can't use Control-C.
+
 For safety and to immediately cancel an action press Control-C.

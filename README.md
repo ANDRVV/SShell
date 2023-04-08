@@ -21,7 +21,7 @@ Now change path:
 
 Now you can run:
 
-`run.py`
+`python run.py`
 
 # Help commands
 

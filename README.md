@@ -20,3 +20,27 @@ Now you can run:
 `Windows: run.bat`
 
 `Linux/MacOS: bash run.sh`
+
+# Help commands
+
+    exit/Control+C:         Exit from SShell.
+    clr:                    Clear the screen.
+    user:                   Change password user.
+    cd:                     Change directory.
+    ls:                     Explore folders.
+    mk:                     Create a file/directory.
+    write:                  Write a file.
+    del:                    Del a file/directory.
+    ren:                    Rename a file/directory.
+    copy:                   Copy a file/directory.
+    mem:                    Set, get consts.
+    extract:                Read a file.
+    arp:                    Send ARP requests.
+    portscanner:            Scan TCP ports.
+    ping:                   Ping a server/device.
+    sniffer:                Sniff and capture WiFi traffic.
+    hexanalysis:            Hexdump a file/text.
+
+It is forbidden to use '', for spaces use '?'.
+Example:
+mk -f Hello?World.txt

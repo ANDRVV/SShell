@@ -1,8 +1,10 @@
 import os, re, subprocess, platform
+
+os.chdir(os.path.dirname(__file__))
 sver = open("setupVerification", "r")
 code = sver.read()
 sver.close()
-if code == "0":
+if "0" in code:
     os.system("pip install pynetsys --user")
     javaVersion = re.search(r'"[0-9\._]*"', subprocess.check_output("java -version", shell = True, stderr = subprocess.STDOUT).decode().split("\r")[0]).group().replace('"', '')
     if "19" in javaVersion:

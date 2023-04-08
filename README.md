@@ -1,5 +1,6 @@
 # What is SShell?
 **SShell** is the acronym of **Simple Shell**, it is a terminal for an easy and instant use where there are default commands and those that can be added externally (version 0.0.2).
+
 **SShell** was created for educational use and easy to use, precisely because everyone can use it.
 
 ![SShell](https://raw.githubusercontent.com/ANDRVV/SShell/main/MDimages/maxSShell.jpg)

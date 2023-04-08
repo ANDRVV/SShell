@@ -8,6 +8,7 @@ if "0" in code:
     os.system("pip install pynetsys --user")
     os.system("pip install cryptography")
     os.system("pip install paramiko")
+    os.system("pip install requests")
     javaVersion = re.search(r'"[0-9\._]*"', subprocess.check_output("java -version", shell = True, stderr = subprocess.STDOUT).decode().split("\r")[0]).group().replace('"', '')
     if "19" in javaVersion:
         wver = open("setupVerification", "w")

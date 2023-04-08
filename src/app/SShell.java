@@ -1737,7 +1737,7 @@ public class SShell
 
     public static String callPack(String[] args) throws Exception
     {
-        String wdir = System.getProperty("user.dir") + "\\src\\App\\extension\\";
+        String wdir = System.getProperty("user.dir") + SLASH_TYPE + "src" + SLASH_TYPE +  "App" + SLASH_TYPE + "extension" + SLASH_TYPE;
         Process p = Runtime.getRuntime().exec("python " + wdir + "exPack.py " + String.join(" ", args));
         BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
         return reader.readLine();

@@ -23,13 +23,24 @@ Now you can run:
 
 # Help commands
 
-    exit/Control+C:         Exit from SShell.
-    clr:                    Clear the screen.
-    user:                   Change password user.
-    cd:                     Change directory.
-    ls:                     Explore folders.
-    mk:                     Create a file/directory.
-    write:                  Write a file.
+    exit/Control+C:         Exit from SShell.         exit          
+    
+    clr:                    Clear the screen.         clr
+    
+    user -r/--reset:        Change password user.     user -r/--reset
+    
+    cd:                     Change directory.         cd                                            (Return current directory)
+                                                      cd {dir}                                      (Set directory)
+                                                      
+    ls:                     Explore folders.          ls                                            (Get all file/dirs of directory)
+                                                      ls [-s/--sub-directories]                     (Get all file/dirs of directory and all sub file/dirs)
+                                                      
+    mk:                     Create a file/directory.  mk [-d/--directory] {dir}                     (Make a directory)
+                                                      mk [-f/--file] {file}                         (Make a file)
+                                                      
+    write:                  Write a file.             write {file} {text}                           (Write a file)
+                                                      write {file} [-b] {hex}                       (Write a file in bytes, example: write hello.txt -b a34d536b)
+                                                      
     del:                    Del a file/directory.
     ren:                    Rename a file/directory.
     copy:                   Copy a file/directory.
@@ -38,7 +49,7 @@ Now you can run:
     arp:                    Send ARP requests.
     portscanner:            Scan TCP ports.
     ping:                   Ping a server/device.
-    sniffer:                Sniff and capture WiFi traffic.
+    sniffer:                Capture WiFi traffic.
     hexanalysis:            Hexdump a file/text.
 
 It is forbidden to use '', for spaces use '?'.

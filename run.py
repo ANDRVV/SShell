@@ -26,7 +26,7 @@ if "0" in code:
                 if "windows" in platform.platform().lower():
                     os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
                 else:
-                    os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null')
+                    os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
         else:
             pass
     else:
@@ -35,4 +35,4 @@ else:
     if "windows" in platform.platform().lower():
         os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
     else:
-        os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null')
+        os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')

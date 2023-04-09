@@ -2,9 +2,9 @@
 
 Required 
 
-1. Python3, 
-2. Java,
-3. Npcap/Winpcap (On windows there is auto-install from run.py).
+1. **Python3**, 
+2. **Java**,
+3. **Npcap**/**Winpcap** (On windows there is auto-install from run.py).
 
 Compatible with:
 
@@ -82,17 +82,17 @@ Now you can run:
                                                       hexanalysis [-f/--file] {file}                       (Hexdump a file)
                                                       hexanalysis [-f/--file] {file} [-c/--copy-clipboard] (Hexdump a file and copy to clipboard)
 
-It is forbidden to use '', for spaces use '?'.
+It is forbidden to use '', for spaces use '**?**'.
 
 Example:
 
 `mk -f Hello?World.txt`
 
-All the commands are made with a "timer", just because you can't use Control-C.
+All the commands are made with a "timer", just because you can't use **Control-C**.
 
-For safety and to immediately cancel an action press Control-C.
+For safety and to immediately cancel an action press **Control-C**.
 
-
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
 
 Copyright 2023 Andrea Vaccaro
 Apache License 2.0

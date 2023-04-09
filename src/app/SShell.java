@@ -9,6 +9,8 @@ import org.apache.commons.codec.binary.*;
 import java.awt.datatransfer.*;
 import java.awt.Toolkit;
 
+@SuppressWarnings("deprecation")
+
 public class SShell
 {
     public static Map<String, String> MEM_SPACE = new HashMap<String, String>();

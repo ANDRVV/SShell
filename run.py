@@ -13,6 +13,10 @@ if "0" in code:
     if "19" in javaVersion:
         pcapver = input("Manually install winpcap/npcap. [N/ok] ")
         if "ok" in pcapver.lower():
+            if "windows" in platform.platform().lower():
+                os.system("@echo off & javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\app\SShell.java")
+            else:
+                os.system("javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\app\SShell.java &> /dev/null")
             wver = open("setupVerification", "w")
             wver.write("1")
             wver.close()

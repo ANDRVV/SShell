@@ -14,7 +14,7 @@ if "0" in code:
         pcapver = input("Manually install winpcap/npcap. [N/ok] ")
         if "ok" in pcapver.lower():
             if "windows" in platform.platform().lower():
-                os.system("@echo off & javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\app\SShell.java")
+                os.system("@echo off & javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\\app\\SShell.java")
             else:
                 os.system("javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src/app/SShell.java &> /dev/null")
             wver = open("setupVerification", "w")
@@ -26,7 +26,7 @@ if "0" in code:
                 if "windows" in platform.platform().lower():
                     os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
                 else:
-                    os.system('clear && java --enable-preview -cp "bin;lib/commons-codec-1.15.jar;lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null')
+                    os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null')
         else:
             pass
     else:
@@ -35,4 +35,4 @@ else:
     if "windows" in platform.platform().lower():
         os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
     else:
-        os.system('clear && java --enable-preview -cp "bin;lib/commons-codec-1.15.jar;lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null')
+        os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell &> /dev/null')

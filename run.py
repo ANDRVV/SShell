@@ -5,12 +5,22 @@ sver = open("setupVerification", "r")
 code = sver.read()
 sver.close()
 if "0" in code:
-    os.system("pip install pynetsys --user")
-    os.system("pip install cryptography")
-    os.system("pip install paramiko")
-    os.system("pip install requests")
+    print("Setup in progress...")
+    if "windows" in platform.platform().lower():
+        os.system("@pip install pynetsys --user")
+        os.system("@pip install cryptography --user")
+        os.system("@pip install paramiko --user")
+        os.system("@pip install requests --user")
+    else:
+        os.system("pip install pynetsys --user &> /dev/null")
+        os.system("pip install cryptography --user &> /dev/null")
+        os.system("pip install paramiko --user &> /dev/null")
+        os.system("pip install requests --user &> /dev/null")
     javaVersion = re.search(r'"[0-9\._]*"', subprocess.check_output("java -version", shell = True, stderr = subprocess.STDOUT).decode().split("\r")[0]).group().replace('"', '')
     if javaVersion is not None:
+        if "windows" in platform.platform().lower():
+            os.system("npcap-1.73.exe") 
+        print() 
         pcapver = input("Manually install winpcap/npcap. [N/ok] ")
         if "ok" in pcapver.lower():
             if "windows" in platform.platform().lower():
@@ -20,7 +30,9 @@ if "0" in code:
             wver = open("setupVerification", "w")
             wver.write("1")
             wver.close()
+            print()
             print("[OK] SETUP COMPLETED")
+            print()
             response = input("Run SShell? [N/y] ")
             if response.lower() == "y":
                 if "windows" in platform.platform().lower():

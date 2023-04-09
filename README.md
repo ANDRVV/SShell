@@ -1,6 +1,6 @@
 Current Version: `v0.0.1`
 
-Required Python3, Java SE 19 and Npcap/Winpcap
+Required Python3, Java and Npcap/Winpcap
 
 # What is SShell?
 **SShell** is the acronym of **Simple Shell**, it is a terminal for an easy and instant use where there are default commands and those that can be added externally (version 0.0.2).

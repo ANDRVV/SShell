@@ -16,7 +16,7 @@ if "0" in code:
             if "windows" in platform.platform().lower():
                 os.system("@echo off & javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\app\SShell.java")
             else:
-                os.system("javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\app\SShell.java &> /dev/null")
+                os.system("javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src/app/SShell.java &> /dev/null")
             wver = open("setupVerification", "w")
             wver.write("1")
             wver.close()

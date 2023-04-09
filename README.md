@@ -1,4 +1,4 @@
-Current Version: `v0.0.2`
+*Current Version*: `v0.0.2`
 
 Required 
 
@@ -8,10 +8,9 @@ Required
 
 Compatible with:
 
-1. *Windows 8.1+*
-2. *Linux* (Recommended *Kali* distro) ─┐
-                                        ├──── Run as *Root* only.
-3. *MacOS*                             ─┘
+1. **Windows 8.1+**
+2. **Linux** (Recommended **Kali** distro)  -  Run as **Root** only.
+3. **MacOS**                                -  Run as **Root** only.
 
 # What is SShell?
 **SShell** is the acronym of **Simple Shell**, it is a terminal for an easy and instant use where there are default commands and those that can be added externally (version 0.0.3).

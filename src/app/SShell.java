@@ -76,7 +76,7 @@ public class SShell
                 FAKE_SLASH_TYPE = "/";
             } else if (SYSTEM.contains("Linux")) 
             {
-                if (!System.getenv("USERDOMAIN").equals("root"))
+                if (!System.getenv("HOME").replace("/home/", "").replace("/", "").equals("root"))
                 {
                     System.out.println("[ERROR] Run as root.");
                     exiter(1);

@@ -12,10 +12,10 @@ if "0" in code:
         os.system("@pip install paramiko --user")
         os.system("@pip install requests --user")
     else:
-        os.system("pip install pynetsys --user &> /dev/null")
-        os.system("pip install cryptography --user &> /dev/null")
-        os.system("pip install paramiko --user &> /dev/null")
-        os.system("pip install requests --user &> /dev/null")
+        os.system("pip install pynetsys --user")
+        os.system("pip install cryptography --user")
+        os.system("pip install paramiko --user")
+        os.system("pip install requests --userl")
     javaVersion = re.search(r'"[0-9\._]*"', subprocess.check_output("java -version", shell = True, stderr = subprocess.STDOUT).decode().split("\r")[0]).group().replace('"', '')
     if javaVersion is not None:
         if "windows" in platform.platform().lower():

@@ -1,9 +1,9 @@
 *Current Version*: `v0.0.2`
 
-Required 
+Required: 
 
-1. **Python3**, 
-2. **Java**,
+1. **Python3** 
+2. **Java**
 3. **Npcap**/**Winpcap** (On windows there is auto-install from run.py).
 
 Compatible with:
@@ -19,7 +19,7 @@ Compatible with:
 
 ![SShell](https://raw.githubusercontent.com/ANDRVV/SShell/main/MDimages/maxSShell.jpg)
 
-## How to install
+## How to install:
 
 Start cloning this repository:
 
@@ -33,7 +33,7 @@ Now you can run:
 
 `python run.py`
 
-# Help commands
+# Help commands:
 
     exit/Control+C:         Exit from SShell.         exit                                                 (Exit from SShell)
     
@@ -95,4 +95,5 @@ For safety and to immediately cancel an action press **Control-C**.
 −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
 
 Copyright 2023 Andrea Vaccaro
+
 Apache License 2.0

@@ -34,6 +34,10 @@ Now you can run:
 
 `python run.py`
 
+## How to bypass setup:
+
+`python run.py --bypass`
+
 # Help commands:
 
     exit/Control+C:         Exit from SShell.         exit                                                 (Exit from SShell)

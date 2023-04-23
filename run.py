@@ -1,4 +1,4 @@
-import os, re, subprocess, platform
+import os, re, subprocess, platform, sys
 
 os.chdir(os.path.dirname(__file__))
 sver = open("setupVerification", "r")

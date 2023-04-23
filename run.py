@@ -4,6 +4,15 @@ os.chdir(os.path.dirname(__file__))
 sver = open("setupVerification", "r")
 code = sver.read()
 sver.close()
+if "0" in code and sys.argv[1] == "--bypass":
+    if "windows" in platform.platform().lower():
+        os.system("@echo off & javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\\app\\SShell.java")
+    else:
+        os.system("javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src/app/SShell.java &> /dev/null")
+    if "windows" in platform.platform().lower():
+        os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
+    else:
+        os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
 if "0" in code:
     print("Setup in progress...")
     if "windows" in platform.platform().lower():

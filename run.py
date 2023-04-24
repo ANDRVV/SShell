@@ -4,7 +4,7 @@ os.chdir(os.path.dirname(__file__))
 sver = open("setupVerification", "r")
 code = sver.read()
 sver.close()
-if len(sys.argv[1]) < 2:
+if len(sys.argv) < 2:
     args = "none"
 else: 
     args = sys.argv[1]

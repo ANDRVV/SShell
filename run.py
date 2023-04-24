@@ -28,7 +28,7 @@ if "0" in code and args != "--bypass":
         os.system("pip install pynetsys --user")
         os.system("pip install cryptography --user")
         os.system("pip install paramiko --user")
-        os.system("pip install requests --userl")
+        os.system("pip install requests --user")
     javaVersion = re.search(r'"[0-9\._]*"', subprocess.check_output("java -version", shell = True, stderr = subprocess.STDOUT).decode().split("\r")[0]).group().replace('"', '')
     if javaVersion is not None:
         if "windows" in platform.platform().lower():

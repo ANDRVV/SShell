@@ -4,6 +4,8 @@ os.chdir(os.path.dirname(__file__))
 sver = open("setupVerification", "r")
 code = sver.read()
 sver.close()
+if not sys.argv[1]:
+    sys.argv[1] = "none"
 if "0" in code and sys.argv[1] == "--bypass":
     if "windows" in platform.platform().lower():
         os.system("@echo off & javac -d bin --class-path bin --add-modules juniversalchardet,org.apache.commons.codec --module-path lib src\\app\\SShell.java")

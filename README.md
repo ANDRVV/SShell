@@ -3,7 +3,7 @@
 Required: 
 
 1. **Python3** 
-2. **Java**
+2. **JDK + Java**
 3. **Npcap**/**Winpcap** (On windows there is auto-install from run.py).
 
 Compatible with:

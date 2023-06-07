@@ -48,16 +48,28 @@ if "0" in code and args != "--bypass":
             print()
             response = input("Run SShell? [N/y] ")
             if response.lower() == "y":
-                if "windows" in platform.platform().lower():
-                    os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
-                else:
-                    os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
+                try:
+                    if "windows" in platform.platform().lower():
+                        os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
+                    else:
+                        os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
+                except:
+                    if "windows" in platform.platform().lower():
+                        os.system('@echo off & cls & java -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
+                    else:
+                        os.system('clear && java -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
         else:
             pass
     else:
         print("[ERROR] Java required.")
 else:
-    if "windows" in platform.platform().lower():
-        os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
-    else:
-        os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
+    try:
+        if "windows" in platform.platform().lower():
+            os.system('@echo off & cls & java --enable-preview -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
+        else:
+            os.system('clear && java --enable-preview -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')
+    except:
+        if "windows" in platform.platform().lower():
+            os.system('@echo off & cls & java -cp "bin;lib\\commons-codec-1.15.jar;lib\\juniversalchardet-1.0.3.jar" app.SShell')
+        else:
+            os.system('clear && java -cp "bin:lib/commons-codec-1.15.jar:lib/juniversalchardet-1.0.3.jar" app.SShell')

@@ -44,7 +44,7 @@ Now you can run:
     
     clr:                    Clear the screen.         clr                                                  (Clear the screen)
     
-    user:        Change password user.     user -r/--reset                                      (Change user password)
+    user:                   Change password user.     user -r/--reset                                      (Change user password)
     
     cd:                     Change directory.         cd                                                   (Return current directory)
                                                       cd {dir}                                             (Set directory)
